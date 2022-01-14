@@ -1,12 +1,18 @@
 package com.william.dsmovie.entities;
 
-import java.io.Serializable;
+import java.io.Serializable; 
+
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Embeddable
 public class ScorePK implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@ManyToOne
 	@JoinColumn(name= "movie_id")
 	private Movie movie;
